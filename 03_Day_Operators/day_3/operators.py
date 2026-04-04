@@ -44,3 +44,13 @@ area_circle = int(area_circle)
 circumference = int(circumference)
 print("The area of the circle is " + str(area_circle))
 print("The circumference of the circle is " + str(circumference))
+
+# Exercise Day 3 - 8 
+m = 2
+b = -2
+x_intercept = int(-b / m)
+
+print(f"Equation: y = {m}x + {b}")
+print(f"Slope: m = {m}")
+print(f"Y-intercept: {b} (0, {b})")
+print(f"X-intercept: {x_intercept} ({x_intercept}, 0)")
