@@ -25,3 +25,12 @@ b = int(input("Enter side b: "))
 c = int(input("Enter side c: "))
 perimeter = a + b + c
 print("The perimeter of the triangle is " + str(perimeter))
+
+# Exercise Day 3 - 6
+length = int(input("Enter length: "))
+width = int(input("Enter width: "))
+
+area_rectangle = length * width
+print("The area of the rectangle is " + str(area_rectangle))
+perimeter_rectangle = 2 * (length + width)
+print("The perimeter of the rectangle is " + str(perimeter_rectangle))
