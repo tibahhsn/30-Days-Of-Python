@@ -34,3 +34,13 @@ area_rectangle = length * width
 print("The area of the rectangle is " + str(area_rectangle))
 perimeter_rectangle = 2 * (length + width)
 print("The perimeter of the rectangle is " + str(perimeter_rectangle))
+
+# Exercise Day 3 - 7
+r = float(input("Enter radius: "))
+pi = 3.14
+area_circle = pi * r**2
+circumference = 2 * pi * r
+area_circle = int(area_circle)
+circumference = int(circumference)
+print("The area of the circle is " + str(area_circle))
+print("The circumference of the circle is " + str(circumference))
