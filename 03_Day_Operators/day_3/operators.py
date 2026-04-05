@@ -46,12 +46,12 @@ print("The area of the circle is " + str(area_circle))
 print("The circumference of the circle is " + str(circumference))
 
 # Exercise Day 3 - 8 
-m = 2
+m8 = 2
 b = -2
-x_intercept = int(-b / m)
+x_intercept = int(-b / m8)
 
-print(f"Equation: y = {m}x + {b}")
-print(f"Slope: m = {m}")
+print(f"Equation: y = {m8}x + {b}")
+print(f"Slope: m = {m8}")
 print(f"Y-intercept: {b} (0, {b})")
 print(f"X-intercept: {x_intercept} ({x_intercept}, 0)")
 
@@ -59,9 +59,9 @@ print(f"X-intercept: {x_intercept} ({x_intercept}, 0)")
 x1, y1 = 2, 2
 x2, y2 = 6, 10
 
-m = y2-y1 / x2-x1
+m9 = y2-y1 / x2-x1
 distance = ((x2-x1)**2 + (y2-y1)**2) **0.5
 print(f"Point 1: {x1}, {y1}")
 print(f"Point 2: {x2}, {y2}")
-print(f"Slope: m = {m}")
+print(f"Slope: m = {m9}")
 print(f"Euclidean distance: {distance}")
