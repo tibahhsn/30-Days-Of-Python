@@ -1,71 +1,71 @@
-# Exercise Day 3 - 1
+import math
+
+# Variable declaration (1-3)
+print("\n1-3. VARIABLE DECLARATION")
+
 age = int(19)
-
-# Exercise Day 3 - 2
 height = float(1.63)
-
-# Exercise Day 3 - 3
 complex_number = complex(1j)
 
-# Exercise Day 3 - 4
-print("Enter base: ")
-base = input()
-base = float(base)
-print("Enter height: ")
-height = input()
-height = float(height)
-area = 0.5 * base * height
-area = int(area)
-area = str(area)
-print("The area of the triangle is " + area)23
+print(f"Age: {age}, Type: {type(age)}")
+print(f"Height: {height}, Type: {type(height)}")
+print(f"Complex number: {complex_number}, Type: {type(complex_number)}")
 
-# Exercise Day 3 - 5
-a = int(input("Enter side a: "))
-b = int(input("Enter side b: "))
-c = int(input("Enter side c: "))
-perimeter = a + b + c
-print("The perimeter of the triangle is " + str(perimeter))
+# Area of a triangle (4)
+print("\n4. AREA OF A TRIANGLE")
 
-# Exercise Day 3 - 6
-length = int(input("Enter length: "))
-width = int(input("Enter width: "))
+base_triangle = float(input("Enter base: "))
+height_triangle = float(input("Enter height: "))
+area_triangle = float(0.5*base_triangle*height_triangle)
 
-area_rectangle = length * width
-print("The area of the rectangle is " + str(area_rectangle))
-perimeter_rectangle = 2 * (length + width)
-print("The perimeter of the rectangle is " + str(perimeter_rectangle))
+print(f"The area of the triangle is {area_triangle}")
 
-# Exercise Day 3 - 7
-r = float(input("Enter radius: "))
+# Perimeter of a triangle (5)
+print("\n5. PERIMETER OF A TRIANGLE")
+
+side_a = float(input("Enter side a: "))
+side_b = float(input("Enter side b: "))
+side_c = float(input("Enter side c: "))
+perimeter_triangle = side_a + side_b + side_c
+
+print(f"The perimeter of the triangle is {perimeter_triangle}")
+
+# Area and Perimeter of a rectangle (6)
+print("\n6. AREA AND PERIMETER OF A RECTANGLE")
+
+length_rectangle = float(input("Enter length: "))
+width_rectangle = float(input("Enter width: "))
+area_rectangle = length_rectangle*width_rectangle
+perimeter_rectangle = 2*(length_rectangle+width_rectangle)
+
+print(f"The area of the rectangle is {area_rectangle} and the perimeter is {perimeter_rectangle}")
+
+# Area and circumference of a circle (7)
+print("\n7. AREA AND CIRCUMFERENCE OF A CIRCLE")
+
+radius = float(input("Enter radius: "))
 pi = 3.14
-area_circle = pi * r**2
-circumference = 2 * pi * r
-area_circle = int(area_circle)
-circumference = int(circumference)
-print("The area of the circle is " + str(area_circle))
-print("The circumference of the circle is " + str(circumference))
+area_circle = pi*radius**2
+circumference = 2*pi*radius
 
-# Exercise Day 3 - 8 
-m8 = 2
-b = -2
-x_intercept = int(-b / m8)
+print(f"The area of the circle is {area_circle} and the circumference is {circumference}")
 
-print(f"Equation: y = {m8}x + {b}")
-print(f"Slope: m = {m8}")
+# Slope, x-intercept, y-intercept (8)
+print("\n8. SLOPE, X-INTERCEPT, Y-INTERCEPT \nFORMAT: y = mx + b")
+
+m = float(input("Enter m (slope): "))
+b = float(input("Enter b: "))
+x_intercept = -b / m
+print(f"Slope (m): {m}")
 print(f"Y-intercept: {b} (0, {b})")
 print(f"X-intercept: {x_intercept} ({x_intercept}, 0)")
 
-# Exercise Day 3 - 9
+# Slope and distance between two points
+print("\n9. SLOPE AND DISTANCE BETWEEN TWO POINTS")
+
 x1, y1 = 2, 2
 x2, y2 = 6, 10
-
-m9 = y2-y1 / x2-x1
-distance = ((x2-x1)**2 + (y2-y1)**2) **0.5
-print(f"Point 1: {x1}, {y1}")
-print(f"Point 2: {x2}, {y2}")
-print(f"Slope: m = {m9}")
+slope_points = (y2-y1) / (x2-x1)
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+print(f"Slope: {slope_points}")
 print(f"Euclidean distance: {distance}")
-
-# Exercise Day 3 - 10
-difference = m8 - m9
-print(f"The slopes' difference is {difference}")
