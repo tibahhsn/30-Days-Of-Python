@@ -65,3 +65,7 @@ print(f"Point 1: {x1}, {y1}")
 print(f"Point 2: {x2}, {y2}")
 print(f"Slope: m = {m9}")
 print(f"Euclidean distance: {distance}")
+
+# Exercise Day 3 - 10
+difference = m8 - m9
+print(f"The slopes' difference is {difference}")
