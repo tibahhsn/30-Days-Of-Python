@@ -69,3 +69,41 @@ slope_points = (y2-y1) / (x2-x1)
 distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
 print(f"Slope: {slope_points}")
 print(f"Euclidean distance: {distance}")
+
+# Slope, x-intercept, y-intercept (8)
+print("\n8. SLOPE, X-INTERCEPT, Y-INTERCEPT \nFORMAT: y = mx + b")
+
+m = float(input("Enter m (slope): "))
+b = float(input("Enter b: "))
+x_intercept = -b / m
+print(f"Slope (m): {m}")
+print(f"Y-intercept: {b} (0, {b})")
+print(f"X-intercept: {x_intercept} ({x_intercept}, 0)")
+
+# Slope and distance between two points (9)
+print("\n9. SLOPE AND DISTANCE BETWEEN TWO POINTS")
+
+x1, y1 = [float(x) for x in input("Enter point 1 coordinates here: ").split()]
+x2, y2 = [float(x) for x in input("Enter point 2 coordinates here: ").split()]
+slope_points = (y2-y1) / (x2-x1)
+distance = math.sqrt((x2 - x1)**2 + (y2 - y1)**2)
+print(f"Slope: {slope_points}")
+print(f"Euclidean distance: {distance}")
+
+# Compare slopes from task 8 and 9 (10)
+print("\n10. COMPARE SLOPES FROM TASK 8 AND 9")
+
+print(f"Slope from task 9 (y=2x-2): {m}")
+print(f"Slope from task 10 (points): {slope_points}")
+if m == slope_points:
+    print("The slopes are equal or parallel")
+elif m*slope_points == -1:
+    print("The slopes are negative reciprocals (perpendicular lines)")
+else:
+    print("The slopes are neither parallel nor perpendicular")
+
+# Quadratic equation
+print("\n11. QUADRATIC EQUATION CALCULATION")
+
+def quadratic(x):
+    return x**2 + 6x + 9
