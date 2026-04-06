@@ -120,3 +120,11 @@ for x in range(-6, 1):
     marker = "   -> zero" if y == 0 else ""
     print(f"x = {x:2d}, y = {y:3d}{marker}")
 print(f"\n y = 0 when x = -3")
+
+# String length comparison (12)
+print("\n12. STRING LENGTH COMPARISON")
+python_len = len("python")
+dragon_len = len("dragon")
+print(f"Length of python: {python_len}")
+print(f"Length of dragon: {dragon_len}")
+print(f"Falsy comparison (Length of python == Length of dragon): {python_len == dragon_len}")
