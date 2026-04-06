@@ -136,3 +136,10 @@ has_on_dragon = 'on' in 'dragon'
 print(f"'on' in Python: {has_on_python}")
 print(f"'on' in Dragon: {has_on_dragon}")
 print(f"Both have 'on'? {has_on_python and has_on_dragon}")
+
+# "on" in dragon and python (14)
+print("\n14. JARGON CHECKER")
+sentence = "I hope this course is not full of jargon."
+has_jargon = "jargon" in sentence
+print(f"sentence: {sentence}")
+print(f"Contains jargon? {has_jargon}")
