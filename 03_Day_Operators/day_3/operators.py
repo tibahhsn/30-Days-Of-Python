@@ -143,3 +143,14 @@ sentence = "I hope this course is not full of jargon."
 has_jargon = "jargon" in sentence
 print(f"sentence: {sentence}")
 print(f"Contains jargon? {has_jargon}")
+
+# length of text and float converter (16)
+print("\n16. LENGTH OF TEXT AND FLOAT CONVERTER")
+
+text = "python"
+python_len = len(text)
+len_float = float(python_len)
+len_string = str(len_float)
+print(f"Original: {text}, Length: {python_len}")
+print(f"Length in float: {len_float}, Type: {type(len_float)}")
+print(f"Length in string: {len_string}, Type: {type(len_string)}")
