@@ -128,3 +128,11 @@ dragon_len = len("dragon")
 print(f"Length of python: {python_len}")
 print(f"Length of dragon: {dragon_len}")
 print(f"Falsy comparison (Length of python == Length of dragon): {python_len == dragon_len}")
+
+# "on" in dragon and python (13)
+print("\n13. 'ON' IN DRAGON AND PYTHON")
+has_on_python = 'on' in 'python'
+has_on_dragon = 'on' in 'dragon'
+print(f"'on' in Python: {has_on_python}")
+print(f"'on' in Dragon: {has_on_dragon}")
+print(f"Both have 'on'? {has_on_python and has_on_dragon}")
