@@ -154,3 +154,9 @@ len_string = str(len_float)
 print(f"Original: {text}, Length: {python_len}")
 print(f"Length in float: {len_float}, Type: {type(len_float)}")
 print(f"Length in string: {len_string}, Type: {type(len_string)}")
+
+# Check even number (17)
+print("\n17. CHECK EVEN NUMBER")
+num = int(input("Enter a number to check if even: "))
+is_even = num % 2 == 0
+print(f"{num} is even? {is_even}")
