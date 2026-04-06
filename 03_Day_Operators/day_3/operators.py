@@ -107,3 +107,16 @@ print("\n11. QUADRATIC EQUATION CALCULATION")
 
 def quadratic(x):
     return x**2 + 6x + 9
+
+# Quadratic equation (11)
+print("\n11. QUADRATIC EQUATION CALCULATION")
+
+def quadratic(x):
+    return x**2 + 6*x + 9
+
+print("Trying different x values:")
+for x in range(-6, 1):
+    y = quadratic(x)
+    marker = "   -> zero" if y == 0 else ""
+    print(f"x = {x:2d}, y = {y:3d}{marker}")
+print(f"\n y = 0 when x = -3")
