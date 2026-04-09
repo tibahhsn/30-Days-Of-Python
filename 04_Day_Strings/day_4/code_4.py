@@ -78,3 +78,17 @@ print(f"Original: {cfap}")
 print(f"Position of last I: {cfap.rfind("I")}")
 
 # Because sentence (23-27.)
+print("\n22-27. BECAUSE SENTENCE ANALYSIS")
+sentence = "You cannot end a sentence with because because because is a conjunction"
+first_because = sentence.index("because")
+last_because = sentence.rfind("because")
+slice_because = sentence[first_because:last_because + len("because")]
+print(f"Sentence: {sentence}")
+print(f"First occurence of the word 'because': {first_because}")
+print(f"Last occurence of the word 'because': {last_because}")
+print(f"Slicing out 'because because because': {slice_because}")
+
+# Starts with & ends with (27-28)
+print("\n27-28. STARTS WITH & ENDS WITH")
+print(f"Starts with 'Coding'? {company.startswith("Coding")}")
+print(f"Ends with 'coding'? {company.endswith("coding")}")
