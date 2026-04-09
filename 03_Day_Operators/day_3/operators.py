@@ -179,3 +179,16 @@ integer_nine = int(9.8)
 equals = integer_nine == integer_ten
 print(f"What is the integer of 9.8? {integer_nine}")
 print(f"Does the integer 9.8 equal to 10? {equals}")
+
+# Weekly paycheck calculator (21)
+print("\n21. WEEKLY PAYCHECK CALCULATOR")
+hours = int(input("Enter hours: "))
+rate_per_hours = int(input("Enter rate per hour: "))
+weekly_earning = hours*rate_per_hours
+print(f"Your weekly earning is {weekly_earning}")
+
+# Seconds in your life (22)
+print("\n22. SECONDS IN YOUR LIFE")
+years_lived = int(input("Enter number of years you have lived: "))
+seconds_lived = (years_lived*365)*24*60*60
+print(f"You have lived for {seconds_lived} seconds.")
