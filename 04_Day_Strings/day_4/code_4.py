@@ -88,7 +88,55 @@ print(f"First occurence of the word 'because': {first_because}")
 print(f"Last occurence of the word 'because': {last_because}")
 print(f"Slicing out 'because because because': {slice_because}")
 
-# Starts with & ends with (27-28)
+# Starts with & ends with (28-29)
 print("\n27-28. STARTS WITH & ENDS WITH")
 print(f"Starts with 'Coding'? {company.startswith("Coding")}")
 print(f"Ends with 'coding'? {company.endswith("coding")}")
+
+# Remove white space (30)
+print("\n30. REMOVE WHITE SPACE")
+white_space = "  Coding For All   "
+print(f"Original: {white_space}")
+print(f"New: {white_space.strip()}")
+
+# Is Identifier check (31)
+print("\n31. IS IDENTIFIER CHECK")
+challenge = "30DaysOfPython"
+underscored = "thirty_days_of_python"
+print(f"Is '{challenge}' valid identifier? {challenge.isidentifier()}")
+print(f"Is '{underscored}' valid identifier? {underscored.isidentifier()}")
+
+# Join list with hash (32)
+print("\n32. JOIN LIST WITH HASH")
+libraries = ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']
+joined_libraries = " # ".join(libraries)
+print(f"Joined list: {joined_libraries}")
+
+# New line escape sequence (33)
+print("\n33. NEW LINE ESCAPE SEQUENCE")
+print("I am enjoying this challenge.\nI just wonder what is next.")
+
+# Tab escape sequence (34)
+print("\n34. TAB ESCAPE SEQUENCE")
+table_1 = "Name\tAge\tCountry\tCity\nAsabeneh\t250\tFinland\tHelsinki"
+x = table_1.expandtabs(10)
+print(x)
+
+# String formatting for circle area (35)
+print("\n35. STRING FORMATTING FOR CIRCLE AREA")
+radius = int(input("radius = "))
+area = 3.14 * radius ** 2
+print(f"area = 3.14 * radius ** 2")
+print("The area of a circle with radius {} is {} meters square.".format(radius, area))
+
+# Arithmetic table (36)
+print("\n36. ARITHMETIC OPERATIONS TABLE")
+a, b = 8, 6
+
+print(f"{a} + {b} = {a + b}")
+print(f"{a} - {b} = {a - b}")
+print(f"{a} * {b} = {a * b}")
+print(f"{a} / {b} = {a / b}")
+print(f"{a} % {b} = {a % b}")
+print(f"{a} // {b} = {a // b}")
+print(f"{a} ** {b} = {a ** b}")
