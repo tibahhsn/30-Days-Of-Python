@@ -192,3 +192,8 @@ print("\n22. SECONDS IN YOUR LIFE")
 years_lived = int(input("Enter number of years you have lived: "))
 seconds_lived = (years_lived*365)*24*60*60
 print(f"You have lived for {seconds_lived} seconds.")
+
+# Table (23)
+print("\n23. TABLE")
+for n in range (1, 6):
+    print(f"{n} {n**0} {n**1} {n**2} {n**3}")
