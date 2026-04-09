@@ -160,3 +160,9 @@ print("\n17. CHECK EVEN NUMBER")
 num = int(input("Enter a number to check if even: "))
 is_even = num % 2 == 0
 print(f"{num} is even? {is_even}")
+
+# Floor division (18)
+print("\n18. FLOOR DIVISION")
+floor_division = float(7//3)
+floor_converted = floor_division == 2.7
+print(f"Is the result 2.7? {floor_converted}")
