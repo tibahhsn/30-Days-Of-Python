@@ -166,3 +166,16 @@ print("\n18. FLOOR DIVISION")
 floor_division = float(7//3)
 floor_converted = floor_division == 2.7
 print(f"Is the result 2.7? {floor_converted}")
+
+# Type of 10 (19)
+print("\n19. TYPE OF 10")
+string_ten = "10"
+integer_ten = 10
+print(f"Type of '10': {type(string_ten)}\nType of 10: {type(integer_ten)}")
+
+# Comparison of integers (20)
+print("\n20. COMPARISON OF INTEGERS")
+integer_nine = int(9.8)
+equals = integer_nine == integer_ten
+print(f"What is the integer of 9.8? {integer_nine}")
+print(f"Does the integer 9.8 equal to 10? {equals}")
